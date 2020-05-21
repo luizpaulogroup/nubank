@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", sans-serif;
+    background: #81259D;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    max-height: 5rem;
+    max-width: 5rem;
+    transition: all 1s;
+}
+
+.container{
+    margin: 0 auto;
+    width: 450px;
+    height: 32rem;
+    padding-top: 50px;
+    background: #FFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.container header{
+    width: 100%;
+    text-align: center;
+}
+
+.container header p{
+    font-weight: 700;
+    font-size: 16pt;
+    line-height: 1.846;
+}
+
+.container header p{
+    font-weight: 700;
+    font-size: 16pt;
+    line-height: 1.846;
+}
+
+.container .content{
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.container .content label{
+    color: #EF5648;
+    order: 1;
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 2px;
+    z-index: 1;
+    transform: translate3d(0, 24px, 0) scale(1);
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    transition: transform cubic-bezier(.25, .8, .25, 1) .25s;
+}
+
+.container .content input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 30px;
+    color: #404040;
+    border-color: #EF5648;
+    border-width: 0 0 1px;
+    border-bottom-style: dotted;
+    box-sizing: border-box;
+    font-size: 14pt;
+    padding-bottom: 0;
+}
+
+.container .content button{
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 16px 32px 17px;
+    color: #8D3DC8;
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 2rem;
+    border: solid 1px #8D3DC8;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #FFF;
+}
+
+.container .content button:hover{
+    color: #FFF;
+    background-color: #8D3DC8; 
+}
+
