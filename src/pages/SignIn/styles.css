@@ -109,28 +109,6 @@ input.input {
     height: 45px;
 }
 
-input.input+.focusInput::after {
-    top: 16px;
-    left: 0;
-}
-
-.input:focus+.focusInput::after {
-    top: -13px;
-}
-
-.input:focus+.focusInput::before {
-    width: 100%;
-}
-
-.has-val.input+.focusInput::after {
-    top: -13px;
-}
-
-.has-val.input+.focusInput::before {
-    width: 100%;
-}
-
-
 .focusInput {
     position: absolute;
     display: block;
@@ -172,6 +150,7 @@ input.input+.focusInput::after {
     font-size: 13px;
     color: #EF5648;
     line-height: 1.2;
+
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -187,14 +166,18 @@ input.input+.focusInput::after {
     top: -13px;
 }
 
-.input:focus+.focusInput::before {
+.focusInputDisabled {
+    position: absolute;
+    display: block;
     width: 100%;
-}
-
-.has-val.input+.focusInput::after {
+    height: 100%;
     top: -13px;
+    left: 0;
+    color:  #EF5648;
+    font-size: 13px;
+    pointer-events: none;
 }
 
-.has-val.input+.focusInput::before {
+.input:focus+.focusInput::before {
     width: 100%;
 }
