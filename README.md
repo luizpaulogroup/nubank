@@ -1,6 +1,5 @@
 <h1 align="center">
-    <img alt="Github logo" width="80px" height="50px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/github.png">
-    <br>
+    <img alt="Github logo" width="70px" height="50px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/github.png">
     <img alt="React logo" width="80px" height="50px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/react.png" />
     <br>
     Nubank React Clone
@@ -38,7 +37,7 @@ $ cd react-nubank
 # Install dependencies
 $ yarn install
 
-# Run the app (iOS)
+# Run the app browser
 $ yarn start
 
 ```
