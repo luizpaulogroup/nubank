@@ -3,6 +3,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -24,7 +25,7 @@ body{
     transition: all 1s;
 }
 
-.container{
+.container-signin{
     margin: 0 auto;
     width: 450px;
     height: 32rem;
@@ -34,32 +35,35 @@ body{
     border-radius: 5px;
 }
 
-.container header{
+.container-signin header{
     width: 100%;
     text-align: center;
 }
 
-.container header p{
+.container-signin header p{
     font-weight: 700;
     font-size: 16pt;
     line-height: 1.846;
 }
 
-.container header p{
+.container-signin header p{
     font-weight: 700;
     font-size: 16pt;
     line-height: 1.846;
 }
 
-.container .content{
+.container-signin .content{
     width: 100%;
     margin-top: 2.5rem;
     padding: 0px 50px;
     box-sizing: border-box;
 }
 
-.container .content button{
-    width: 100%;
+.container-signin .content .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
     margin-top: 2.5rem;
     padding: 16px 32px 17px;
     color: #8D3DC8;
@@ -76,9 +80,8 @@ body{
     transition: all 1s;
 }
 
-.container .content button:hover{
+.container-signin .content .button:hover{
     color: #FFF;
-    background-color: #8D3DC8; 
     background: #8D3DC8;
     background: -webkit-linear-gradient(45deg, #D5007D, #8D3DC8);
     background: -o-linear-gradient(45deg, #D5007D, #8D3DC8);

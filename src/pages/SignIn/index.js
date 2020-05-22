@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Link } from "react-router-dom";
+
 import './styles.css';
 
 import logo from '../../assets/logo.svg';
@@ -10,7 +12,7 @@ export default function SignIn() {
     const [senha, setSenha] = useState("");
 
     return (
-        <div className="container" >
+        <div className="container-signin" >
             <img className="logo" src={logo} />
             <header>
                 <p> Faça seu login </p>
@@ -46,7 +48,7 @@ export default function SignIn() {
                     }
                 </div>
 
-                <button> CONTINUAR </button>
+                <Link className="button" to="/bills"> CONTINUAR </Link>
 
             </div>
         </div >
