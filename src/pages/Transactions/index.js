@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
-import '../../Global/styles.css';
+import './transactions.css';
 
 export default function Transactions() {
     return (
