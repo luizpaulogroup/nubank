@@ -7,5 +7,10 @@
 }
 
 body{
+    background: #81259D;
     font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", sans-serif;
+}
+
+.navbar-name-user{
+    color: #81259D;
 }

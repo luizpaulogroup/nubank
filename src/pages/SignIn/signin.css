@@ -1,22 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body{
-    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", sans-serif;
-    background: #81259D;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.logo{
+.logo-signin{
     position: absolute;
     top: 1.5rem;
     left: 2rem;
@@ -26,6 +8,7 @@ body{
 }
 
 .container-signin{
+    margin-top: 50px !important;
     margin: 0 auto;
     width: 450px;
     height: 32rem;
@@ -52,17 +35,18 @@ body{
     line-height: 1.846;
 }
 
-.container-signin .content{
+.container-signin .content-signin{
     width: 100%;
     margin-top: 2.5rem;
     padding: 0px 50px;
     box-sizing: border-box;
 }
 
-.container-signin .content .button{
+.container-signin .content-signin .button-signin{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     width: 100% !important;
     margin-top: 2.5rem;
     padding: 16px 32px 17px;
@@ -80,7 +64,7 @@ body{
     transition: all 1s;
 }
 
-.container-signin .content .button:hover{
+.container-signin .content-signin .button-signin:hover{
     color: #FFF;
     background: #8D3DC8;
     background: -webkit-linear-gradient(45deg, #D5007D, #8D3DC8);
@@ -89,14 +73,14 @@ body{
     background: linear-gradient(45deg, #D5007D, #8D3DC8);
 }
 
-.nuWrapInput {
+.nuWrapInput-signin {
     width: 100%;
     position: relative;
     border-bottom: 2px dotted #EF5648;
     margin-bottom: 37px;
 }
 
-.input {
+.input-signin {
     display: block;
     width: 100%;
     font-size: 15px;
@@ -108,11 +92,11 @@ body{
     font-size: 14pt;
 }
 
-input.input {
+input.input-signin {
     height: 45px;
 }
 
-.focusInput {
+.focusInput-signin {
     position: absolute;
     display: block;
     width: 100%;
@@ -122,7 +106,7 @@ input.input {
     pointer-events: none;
 }
 
-.focusInput::before {
+.focusInput-signin::before {
     content: "";
     display: block;
     position: absolute;
@@ -143,7 +127,7 @@ input.input {
     background: linear-gradient(45deg, #D5007D, #8D3DC8);
 }
 
-.focusInput::after {
+.focusInput-signin::after {
     content: attr(data-placeholder);
     display: block;
     width: 100%;
@@ -160,16 +144,16 @@ input.input {
     transition: all 0.4s;
 }
 
-input.input+.focusInput::after {
+input.input-signin+.focusInput-signin::after {
     top: 16px;
     left: 0;
 }
 
-.input:focus+.focusInput::after {
+.input-signin:focus+.focusInput-signin::after {
     top: -13px;
 }
 
-.focusInputDisabled {
+.focusInputDisabled-signin {
     position: absolute;
     display: block;
     width: 100%;
@@ -181,6 +165,6 @@ input.input+.focusInput::after {
     pointer-events: none;
 }
 
-.input:focus+.focusInput::before {
+.input-signin:focus+.focusInput-signin::before {
     width: 100%;
 }

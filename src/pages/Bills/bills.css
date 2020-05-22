@@ -1,7 +1,6 @@
 .container-bills{
     margin: 0 auto;
-    width: 95%;
-    height: auto;
+    width: 80%;
     padding: 25px;
     background: #FFF;
     box-sizing: border-box;
@@ -41,21 +40,19 @@
 }
 
 .bills {
-    margin-top: 15px;
     /* padding: 5px 12px 5px; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-        
+    height: 150px;
 }
 
 .bill {
 
     width: 150px;
     height: 150px;
-    margin: 5px;
+    margin: 0 5px;
 
     display: flex;
     flex-direction: column;
@@ -64,11 +61,11 @@
 
     box-shadow: 5px 5px 42px #222;
 
-    background: #8D3DC8;
+    /* background: #8D3DC8;
     background: -webkit-linear-gradient(45deg, #D5007D, #8D3DC8);
     background: -o-linear-gradient(45deg, #D5007D, #8D3DC8);
     background: -moz-linear-gradient(45deg, #D5007D, #8D3DC8);
-    background: linear-gradient(45deg, #D5007D, #8D3DC8);
+    background: linear-gradient(45deg, #D5007D, #8D3DC8); */
 
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;

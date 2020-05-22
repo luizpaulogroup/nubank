@@ -2,6 +2,8 @@ import React from 'react';
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import SignIn from './pages/SignIn';
 import Transactions from './pages/Transactions';
 import Bills from './pages/Bills';

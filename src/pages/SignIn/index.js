@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 import { Link } from "react-router-dom";
 
+import '../../Global/styles.css';
+
 import './signin.css';
 
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo-signin.svg';
 
 export default function SignIn() {
 
@@ -13,42 +15,42 @@ export default function SignIn() {
 
     return (
         <div className="container-signin" >
-            <img className="logo" src={logo} />
+            <img className="logo-signin" src={logo} />
             <header>
                 <p> Faça seu login </p>
             </header>
 
-            <div className="content">
+            <div className="content-signin">
 
-                <div class="nuWrapInput">
+                <div class="nuWrapInput-signin">
                     <input
-                        className="input"
+                        className="input-signin"
                         type="text"
                         name="CPF"
                         value={cpf}
                         onChange={input => setCpf(input.target.value)} />
                     {cpf.length == 0 ?
-                        <span className="focusInput" data-placeholder="CPF"> </span>
+                        <span className="focusInput-signin" data-placeholder="CPF"> </span>
                         :
-                        <span className="focusInputDisabled">CPF</span>
+                        <span className="focusInputDisabled-signin">CPF</span>
                     }
                 </div>
 
-                <div className="nuWrapInput">
+                <div className="nuWrapInput-signin">
                     <input
-                        className="input"
+                        className="input-signin"
                         type="password"
                         name="senha"
                         value={senha}
                         onChange={input => setSenha(input.target.value)} />
                     {senha.length == 0 ?
-                        <span className="focusInput" data-placeholder="Senha"> </span>
+                        <span className="focusInput-signin" data-placeholder="Senha"> </span>
                         :
-                        <span className="focusInputDisabled">Senha</span>
+                        <span className="focusInputDisabled-signin">Senha</span>
                     }
                 </div>
 
-                <Link className="button" to="/bills"> CONTINUAR </Link>
+                <Link className="button-signin" to="/bills"> CONTINUAR </Link>
 
             </div>
         </div >
