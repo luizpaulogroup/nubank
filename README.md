@@ -1,7 +1,7 @@
 <h1 align="center">
-    <img alt="Github logo" width="300px" height="200px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/github.png">
+    <img alt="Github logo" width="100px" height="50px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/github.png">
     <br>
-    <img alt="React logo" width="300px" height="200px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/react.png" />
+    <img alt="React logo" width="100px" height="50px" src="https://github.com/luizpaulogroup/react-native-github/blob/master/src/Gif/react.png" />
     <br>
     Nubank React Clone
 </h1>
