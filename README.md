@@ -10,12 +10,11 @@
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
 </p>
 
 ## :rocket: Technologies
 
-This project was developed with the [RocketSeat Nubank Clone Video](https://youtu.be/DDm0M_rZLJo) with the following technologies:
+This project was developed with the technologies:
 
 -  [React](https://pt-br.reactjs.org/)
 -  [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
