@@ -11,9 +11,16 @@ export default class Bill {
     create(obj) {
         return db.put({
             _id: new Date().toISOString(),
-            value: 25.00,
             ...obj
         });
+    }
+
+    remove(obj) {
+        return db.remove(obj);;
+    }
+
+    destroy() {
+        return db.destroy();
     }
 
 }

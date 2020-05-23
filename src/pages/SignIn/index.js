@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { Link } from "react-router-dom";
 
+import InputMask from "react-input-mask";
+
 import '../../Global/styles.css';
 
 import './signin.css';
@@ -23,7 +25,8 @@ export default function SignIn() {
             <div className="content-signin">
 
                 <div class="nuWrapInput-signin">
-                    <input
+                    <InputMask
+                        mask="999.999.999-99"
                         className="input-signin"
                         type="text"
                         name="CPF"

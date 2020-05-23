@@ -117,3 +117,27 @@
     background: -moz-linear-gradient(45deg, #D5007D, #8D3DC8);
     background: linear-gradient(45deg, #D5007D, #8D3DC8);
 }
+
+.button-delete-bill{
+    outline: none !important;
+    width: 25px;
+    height: 25px;
+    color: rgb(63,81,181);
+    font-weight: 700;
+    border: solid 1px rgb(63,81,181);
+    border-radius: 50px;
+    cursor: pointer;
+    background: #FFF;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.button-delete-bill:hover{
+    color: #FFF;
+    border: solid 1px #FFF;
+    background: -webkit-linear-gradient(45deg, #D5007D, rgb(63,81,181));
+    background: -o-linear-gradient(45deg, #D5007D, rgb(63,81,181));
+    background: -moz-linear-gradient(45deg, #D5007D, rgb(63,81,181));
+    background: linear-gradient(45deg, #D5007D, rgb(63,81,181));
+}
