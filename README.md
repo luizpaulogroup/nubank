@@ -16,9 +16,12 @@
 This project was developed with the technologies:
 
 -  [React](https://pt-br.reactjs.org/)
+-  [PouchDB](https://pouchdb.com/)
 -  [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
 -  [react-bootstrap](https://react-bootstrap.netlify.app/)
 -  [styled-components](https://www.styled-components.com/)
+-  [react-toastify](https://github.com/fkhadra/react-toastify)
+-  [react-input-mask](https://github.com/sanniassin/react-input-mask)
 -  [VS Code][vc]
 
 ## :information_source: How To Use
