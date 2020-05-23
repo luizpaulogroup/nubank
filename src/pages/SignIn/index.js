@@ -24,9 +24,10 @@ export default function SignIn() {
 
             <div className="content-signin">
 
-                <div class="nuWrapInput-signin">
+                <div className="nuWrapInput-signin">
                     <InputMask
                         mask="999.999.999-99"
+                        maskPlaceholder={null}
                         className="input-signin"
                         type="text"
                         name="CPF"

@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 import { Link } from "react-router-dom";
 
-import { Navbar, Nav, NavDropdown, Spinner } from 'react-bootstrap';
+import { Navbar, Nav, Spinner } from 'react-bootstrap';
 
 import InputMask from "react-input-mask";
+
+import { toast, ToastContainer } from 'react-toastify';
 
 import logo from '../../assets/logo-navbar.svg';
 
@@ -29,8 +31,8 @@ export default function Bills() {
     const [loadingCreateBill, setLoadingCreateBill] = useState(false);
 
     useEffect(() => {
-        handleData()
-        all()
+        handleData();
+        all();
     }, [update])
 
     const handleData = async obj => {
@@ -74,17 +76,17 @@ export default function Bills() {
 
             if (!monthId.trim()) {
                 setLoadingCreateBill(false);
-                return alert("Informe o mês!");
+                return toast.error("Informe o mês!");
             }
 
             if (!value.trim()) {
                 setLoadingCreateBill(false);
-                return alert("Informe o valor!");
+                return toast.error("Informe o valor!");
             }
 
             if (!description.trim()) {
                 setLoadingCreateBill(false);
-                return alert("Informe a descrição!");
+                return toast.error("Informe a descrição!");
             }
 
             var obj = new Bill();
@@ -97,6 +99,8 @@ export default function Bills() {
             setDescription("");
 
             setUpdate(update + 1);
+
+            return toast.success("Parcela gerada!");
 
         } catch (error) {
             setLoadingCreateBill(false);
@@ -130,6 +134,8 @@ export default function Bills() {
             await obj.remove(bill)
 
             setUpdate(update + 1);
+
+            return toast.success("Parcela apaga!");
 
         } catch (error) {
             console.log(error);
@@ -220,8 +226,8 @@ export default function Bills() {
                                 <tbody>
                                     {bills.map((bill, key) => (
                                         <tr key={key}>
-                                            <td>{bill.doc.description}</td>
-                                            <td>R${handleValue(bill.doc.value)}</td>
+                                            <td className="description-table">{bill.doc.description}</td>
+                                            <td className="value-table">R$ {handleValue(bill.doc.value)}</td>
                                             <td className="text-right">
                                                 <button
                                                     className="button-delete-bill"
@@ -236,6 +242,7 @@ export default function Bills() {
                     </div>
                 </div>
             </div>
+            <ToastContainer className="toast-background" position="bottom-right" />
         </>
     )
 }

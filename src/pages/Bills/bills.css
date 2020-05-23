@@ -141,3 +141,9 @@
     background: -moz-linear-gradient(45deg, #D5007D, rgb(63,81,181));
     background: linear-gradient(45deg, #D5007D, rgb(63,81,181));
 }
+.description-table{
+    font-weight: 700;
+}
+.value-table{
+    color: #444;
+}
