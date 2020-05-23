@@ -13,8 +13,6 @@
 
 <h1 align="center">
     <img src="https://github.com/luizpaulogroup/react-nubank/blob/master/src/assets/GIF.gif" style="max-width:100%;">
-    <img width="750px" src="https://github.com/luizpaulogroup/react-nubank/blob/master/src/assets/Bills1.png" style="max-width:100%;">
-    <img width="750px" src="https://github.com/luizpaulogroup/react-nubank/blob/master/src/assets/Bills2.png" style="max-width:100%;">
 </h1>
 
 ## :rocket: Technologies
