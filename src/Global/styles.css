@@ -14,3 +14,13 @@ body{
 .navbar-name-user{
     color: #81259D;
 }
+
+.button-action-navbar{
+    text-decoration: none;
+    color: #81259D;
+    font-weight: 700;
+}
+
+.button-action-navbar:hover{
+    text-decoration: none;
+}
