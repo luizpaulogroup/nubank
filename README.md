@@ -26,7 +26,7 @@ This project was developed with the technologies:
 -  [styled-components](https://www.styled-components.com/)
 -  [react-toastify](https://github.com/fkhadra/react-toastify)
 -  [react-input-mask](https://github.com/sanniassin/react-input-mask)
--  [VS Code][vc]
+-  [Visual Studio Code](https://code.visualstudio.com/)
 
 ## :information_source: How To Use
 
